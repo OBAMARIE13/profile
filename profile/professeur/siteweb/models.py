@@ -18,8 +18,6 @@ class Banner(models.Model):
     
     
 class About(models.Model):
-    icone = models.TextField()
-    lien = models.TextField()
     titre = models.CharField(max_length=200)
     description = models.TextField()        
     status = models.BooleanField(default=False)

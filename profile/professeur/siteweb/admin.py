@@ -8,7 +8,7 @@ class BannerAdmin(admin.ModelAdmin):
     
 @admin.register(models.About)
 class AboutAdmin(admin.ModelAdmin):
-    list_display = ["icone", "lien", "titre", "description", "status", "date_add", "date_update"]
+    list_display = ["titre", "description", "status", "date_add", "date_update"]
     
 @admin.register(models.About_detail)
 class About_detailAdmin(admin.ModelAdmin):
@@ -18,6 +18,3 @@ class About_detailAdmin(admin.ModelAdmin):
 @admin.register(models.Liens_sociaux)
 class BannerAdmin(admin.ModelAdmin):
     list_display = ["icone", "nom", "lien", "status", "date_add", "date_update"]
-    
-  
-     
